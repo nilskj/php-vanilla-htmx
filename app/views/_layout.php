@@ -28,6 +28,5 @@ if (!isset($content)) {
     <footer>
         <p>&copy; My Site - <?= date('Y'); ?></p>
     </footer>
-    <script src="https://unpkg.com/tiny-editor/dist/bundle.js"></script>
 </body>
 </html>

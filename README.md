@@ -1,7 +1,12 @@
 ## PHP no framework HTMX example
 
 This is a simple example of using HTMX with PHP and no framework. It uses the [HTMX](https://htmx.org/) library to make AJAX requests and update the page with HTML over the wire. It has some basic error handling and exception handling.
-We can also parse the HX-request header and render content without template. See `register_shutdown_function()`. In the /about page I also included an example of how one can work with a SQLite database.
+We can also parse the HX-request header and render content without template. See `register_shutdown_function()`. In the `/about` page I also included an example of how one can work with a SQLite database. 
+
+I'm also using TailwindCSS, download the CLI (it is not checked in here), place it in `/project` and run it in watch mode with this command:
+```bash
+./tailwind -i ./app/source.css -o ./public/css/style.css --watch
+```
 
 I'm running this locally on my mac by using https://www.mamp.info/en/mamp/mac/ with a nginx controller that is routing like so:
 ```nginx
